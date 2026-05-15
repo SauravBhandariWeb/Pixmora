@@ -6,7 +6,7 @@ Pixmora is a modern and responsive image gallery web application built using HTM
 
 ![Pixmora Preview](./full.png)
 
-## Mobile Responsive
+## 📱 Mobile Responsive
 
 ![Pixmora Preview](./responsive.png)
 
