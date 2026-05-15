@@ -11,38 +11,30 @@ body {
   color: white;
 }
 
-/* 🔹 NAVBAR */
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-  padding: 12px 20px;
+  gap: 10px;
+  padding: 10px 15px;
   position: sticky;
   top: 0;
   z-index: 1000;
-
   backdrop-filter: blur(12px);
   background: rgba(20, 20, 20, 0.6);
-
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  flex-wrap: wrap;
 }
 
 /* 🔹 LOGO */
 .logo {
   display: flex;
   align-items: center;
-  gap: 8px;
-  min-width: fit-content;
 }
 
 .logo img {
-  width: 38px;
-  height: 38px;
-  object-fit: contain;
-  display: block;
+  height: 30px;
+  width: auto;
   border-radius: 8px;
-
   transition: 0.3s;
   filter: drop-shadow(0 0 6px rgba(108, 99, 255, 0.4));
 }
@@ -51,35 +43,20 @@ body {
   transform: scale(1.05);
 }
 
-.logo h2 {
-  font-size: 26px;
-  color: white;
-  font-weight: 600;
-}
-
-/* 🔹 SEARCH */
 .inpbtn {
   flex: 1;
   display: flex;
-  gap: 10px;
+  gap: 8px;
   min-width: 150px;
 }
 
 .search {
   flex: 1;
-  padding: 12px 15px;
-
-  border-radius: 30px;
+  padding: 8px 12px;
+  border-radius: 20px;
   border: none;
-
   background: rgba(0, 0, 0, 0.4);
   color: white;
-
-  font-size: 15px;
-}
-
-.search::placeholder {
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .search:focus {
@@ -87,39 +64,29 @@ body {
   box-shadow: 0 0 8px rgba(108, 99, 255, 0.6);
 }
 
-/* 🔹 BUTTONS */
+/* 🔹 BUTTON */
 button {
   cursor: pointer;
-
-  border-radius: 10px;
+  border-radius: 8px;
   border: none;
-
-  padding: 10px 15px;
-
+  padding: 6px 10px;
   color: white;
   background: rgba(255, 255, 255, 0.08);
-
   transition: 0.3s;
 }
 
 button:hover {
-  background: linear-gradient(
-    135deg,
-    rgb(81, 161, 193),
-    #ff4ecd,
-    #6c63ff
-  );
+  background: linear-gradient(135deg, rgb(81, 161, 193), #ff4ecd, #6c63ff);
 }
 
 /* 🔹 CATEGORIES */
 .categories {
   display: flex;
   gap: 8px;
-
-  padding: 10px 15px;
+  padding: 8px 15px;
 
   position: sticky;
-  top: 70px;
+  top: 52px;
   z-index: 999;
 
   backdrop-filter: blur(10px);
@@ -133,67 +100,55 @@ button:hover {
   display: none;
 }
 
-/* 🔹 GRID */
 .grid {
   column-count: 4;
-  column-gap: 12px;
-  padding: 12px;
+  column-gap: 10px;
+  padding: 10px;
 }
 
 /* 🔹 IMAGE CARD */
 .image-btn {
   position: relative;
-
   break-inside: avoid;
-  margin-bottom: 12px;
-
+  margin-bottom: 10px;
   cursor: pointer;
 }
 
 .image-btn img {
   width: 100%;
-  border-radius: 12px;
-
+  border-radius: 10px;
   transition: 0.3s;
 }
 
 .image-btn:hover img {
   transform: scale(1.02);
-
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.58);
 }
 
-/* 🔹 OVERLAY */
+/* OVERLAY */
 .image-btn::after {
   content: "";
-
   position: absolute;
   inset: 0;
-
-  border-radius: 12px;
+  border-radius: 10px;
 
   opacity: 0;
   transition: 0.3s;
-
   pointer-events: none;
 }
 
 .image-btn:hover::after {
-  opacity: 1;
+  opacity: 2;
 }
 
-/* 🔹 DOWNLOAD BUTTON */
+/* DOWNLOAD BUTTON */
 .download-image {
   position: absolute;
-
-  bottom: 10px;
-  right: 10px;
-
+  bottom: 8px;
+  right: 8px;
   background: rgba(0, 0, 0, 0.6);
-
   border-radius: 8px;
   padding: 6px;
-
   opacity: 0;
   transition: 0.3s;
 }
@@ -202,7 +157,6 @@ button:hover {
   opacity: 1;
 }
 
-/* 🔹 ICONS */
 .icons {
   align-items: center;
   display: flex;
@@ -211,87 +165,51 @@ button:hover {
 
 .icons img {
   width: 25px;
-  height: 25px;
-
   margin-top: 3px;
-
+  height: 25px;
   border-radius: 6px;
-
   background: white;
   padding: 4px;
 }
 
-/* 🔹 TABLET */
+/* TABLET */
 @media (max-width: 900px) {
   .grid {
     column-count: 3;
   }
 }
 
-/* 🔹 MOBILE */
+/* MOBILE */
 @media (max-width: 600px) {
-
   .navbar {
     flex-direction: column;
     align-items: stretch;
-  }
-
-  .logo {
-    justify-content: center;
-  }
-
-  .logo img {
-    width: 32px;
-    height: 32px;
-  }
-
-  .logo h2 {
-    font-size: 22px;
   }
 
   .inpbtn {
     width: 100%;
   }
 
-  .search {
-    padding: 10px 12px;
-  }
-
-  button {
-    padding: 10px 12px;
-  }
-
   .grid {
     column-count: 2;
   }
 
-  .categories {
-    top: 118px;
-  }
-
   .categories button {
     font-size: 12px;
-    padding: 6px 10px;
+    padding: 5px 8px;
   }
 }
 
-/* 🔹 SMALL MOBILE */
 @media (max-width: 400px) {
-
+  .categories {
+    position: sticky;
+    top: 52px;
+  }
   .grid {
     column-count: 1;
   }
 
   .logo img {
-    width: 28px;
-    height: 28px;
-  }
-
-  .logo h2 {
-    font-size: 20px;
-  }
-
-  .categories {
-    top: 118px;
+    height: 26px;
   }
 }
