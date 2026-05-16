@@ -20,6 +20,6 @@ Pixmora is a modern and responsive image gallery web application built using HTM
 - ⚡ Dynamic image loading using API
 - 🖼️ High-quality images from Unsplash
 
-## RUN IN YOUR DEVICE 
+## 📱 💻 RUN IN YOUR DEVICE 
 
 https://sauravbhandariweb.github.io/Pixmora/
