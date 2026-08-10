@@ -6,8 +6,8 @@ const categories = document.querySelectorAll(".categories");
 // function to fetch images
 
 async function getImages(query) {
-  const unplash_url=import.meta.env.UNPLASH_URL;
-  const url = unplash_url;
+   
+  const url = `https://api.unsplash.com/search/photos?query=${query}&per_page=30&client_id=${UNSPLASH_API}`;
 
   try {
     const res = await fetch(url); // wait sometimes
