@@ -22,4 +22,4 @@ Pixmora is a modern and responsive image gallery web application built using HTM
 
 ## 📱 💻 RUN IN YOUR DEVICE 
 
-https://sauravbhandariweb.github.io/Pixmora/
+**check about section **
