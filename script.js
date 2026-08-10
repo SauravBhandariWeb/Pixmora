@@ -6,7 +6,7 @@ const categories = document.querySelectorAll(".categories");
 // function to fetch images
 
 async function getImages(query) {
-  const unplash_url=import.meta.UNPLASH_URL;
+  const unplash_url=import.meta.env.UNPLASH_URL;
   const url = unplash_url;
 
   try {
